@@ -1,0 +1,130 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles // rewrite original
+================================================== */
+	img{ max-width: 100%; height: auto; }
+	div.top-navigation-wrapper{ min-width: 0; }
+
+
+/* #Page Styles
+================================================== */
+	
+/* #Media Queries
+================================================== */
+
+	/* Normal Size with no sidebar */
+		
+	/* Normal Size with one sidebar */
+	
+	/* Normal Size with both sidebar */
+	
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */	
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		div.container { padding-left: 0px !important; padding-right: 0px !important; }	
+		div.social-wrapper{ margin-right: 10px; }
+	
+		div.both-sidebar-included .comment-wrapper input[type="text"], input[type="password"] { width: 220px; }
+		div.both-sidebar-included .comment-wrapper .comment-form-captcha input{ width: 105px; }
+		
+		div.single-port-thumbnail-image,
+		div.single-port-thumbnail-video,
+		div.single-port-thumbnail-slider{ margin-right: 20px; float: left; width: 440px; }
+	}
+	
+	/* reduce padding */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		
+	} 
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		div.container { padding-left: 10px !important; padding-right: 10px !important; }	
+		
+		div.top-navigation-left{ float: none; margin-left: 0px; }
+		div.top-navigation-right{ float: none; margin-top: 5px; margin-right: 0px}
+		div.menu-top-menu-container{ display: inline-block; }
+		
+		div.header-wrapper{ text-align: center; }
+		div.logo-wrapper{ display: inline-block; float: none; margin-right: 0px; margin-bottom: 20px; } 
+		div.social-wrapper{ position: relative; display: inline-block; margin: 0px 10px 20px; text-align: center; float: none; }
+			
+		div.navigation-wrapper{ display: none; }	
+		div.responsive-menu-wrapper{ display: block; margin: 0px 10px; }
+		
+		div.flex-caption{ display: none; }
+		
+		div.stunning-text-wrapper{ text-align: center; }
+		a.stunning-text-button{ display: inline-block; float: none; margin: 0px 0px 10px; float: none; }
+		h1.stunning-text-title{ margin-bottom: 10px; float: none; }
+		div.stunning-text-caption{ float: none; }
+		
+		/* Slider*/
+		div.anythingSlider,
+		div.nivoSlider{ display: none !important; }
+		
+		/* Sidebar */
+		div.left-sidebar-wrapper,
+		div.right-sidebar-wrapper{ border: none; padding: 20px 0px 0px 0px; padding-left: 0px; height: auto !important; }
+		
+		/* for shortcode */
+		.shortcode1-4,
+		.shortcode1-3,
+		.shortcode1-2,
+		.shortcode2-3,
+		.shortcode3-4,
+		.shortcode1{ width: 100%; margin-bottom: 10px; float: none; }
+		
+		/* for price table */
+		.percent-column1-6,
+		.percent-column1-5,
+		.percent-column1-4,
+		.percent-column1-3,
+		.percent-column1-2,
+		.percent-column1-1{ width: 50% !important; }
+		div.gdl-price-item .price-item.active { padding-bottom: 30px !important; margin-top: 0px; }
+		
+		div.single-port-thumbnail-image,
+		div.single-port-thumbnail-video,
+		div.single-port-thumbnail-slider{ margin: 0px 0px 15px; float: none; width: auto; }		
+		
+		/* for blog */
+		div.blog-thumbnail-info, div.single-thumbnail-info{ float: none; padding-bottom: 10px; width: auto; } 
+
+			
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		div.comment-wrapper input[type="text"], input[type="password"] { width: 270px !important; }
+		div.comment-wrapper .comment-form-captcha input{ width: 155px !important; }		
+		
+		div.pp_pic_holder{ min-width: 200px; }
+		div.pp_default .pp_content_container .pp_details{ min-width: 166px; }
+		div.pp_content{ min-width: 166px; height: auto !important; padding-bottom: 30px; }
+		div.pp_default .pp_description{ min-width: 166px; }
+		div#pp_full_res img{ min-width: 166px; height: auto !important; }
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		div.comment-wrapper input[type="text"], input[type="password"] { width: 180px !important; }
+		div.comment-wrapper .comment-form-captcha input{ width: 65px !important; }				
+	}	
+	
