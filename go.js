@@ -1,14 +1,13 @@
 var http = require("http"),
-url = require("url"),
-path = require("path"),
-fs = require("fs");
+    url = require("url"),
+    path = require("path"),
+    fs = require("fs");
 
 port = process.env.PORT || 5000;
 
 http.createServer(function(request, response) {
-
-  var uri = url.parse(request.url).pathname
-    , filename = path.join(process.cwd(), uri);
+  var uri = url.parse(request.url).pathname;
+  var filename = path.join(process.cwd(), uri);
 
   path.exists(filename, function(exists) {
     if(!exists) {
