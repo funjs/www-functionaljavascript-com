@@ -3,7 +3,7 @@ url = require("url"),
 path = require("path"),
 fs = require("fs");
 
-port = process.argv[2] || 8888;
+port = process.env.PORT || 5000;
 
 http.createServer(function(request, response) {
 
