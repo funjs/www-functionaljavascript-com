@@ -9,12 +9,8 @@ TODO
 * Add long polls
 * Add glossary feed
 * Add rand feed
-* Add lemonad
-* Add content
 * Add console
 * Add eggs
 * Minimize css
 * Add chapter content
-* Add coupons (?)
-* Add bio
 
