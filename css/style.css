@@ -46,14 +46,17 @@ Author URI: http://goodlayers.com
 
 /* #Basic Styles
 ================================================== */
-	body {
-		font-family: "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
-		font-size: 12px;
-		color: #666;
-		-webkit-text-size-adjust: 100%;
-		line-height: 18.5px;
+body {
+    font-family: "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+    -webkit-text-size-adjust: 100%;
+    line-height: 18.5px;
  }
- 	html{ min-height: 100%; }
+
+html{ min-height: 100%; }
+
+i { font-style: italic; }
 
 /* #Typography
 ================================================== */
@@ -610,7 +613,7 @@ div.column-service-title-wrapper{ margin-bottom: 8px; }
 div.stunning-text-wrapper{ padding: 15px; }
 h1.stunning-text-title{ 
 	margin: 1px 20px 0px 10px; line-height: 30px; font-size: 20px; font-weight: bold; float: left;  }
-div.stunning-text-caption{ font-size: 17px; margin-top: 9px; }
+div.stunning-text-caption{ font-size: 14px; margin-top: 9px; }
 div.stunning-text-button-wrapper{ text-align: center; } 
 a.stunning-text-button{ padding: 7px 14px; font-size: 13px; font-weight: bold; float: right; margin-left: 20px; }
 	
