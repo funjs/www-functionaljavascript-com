@@ -1,7 +1,9 @@
 {
   "name": "funjs",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+
+  },
   "engines": {
     "node": "0.10.1",
     "npm": "1.1.x"
