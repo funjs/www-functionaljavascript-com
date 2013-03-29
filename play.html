@@ -96,7 +96,8 @@
 			    <h1 class="stunning-text-title">Hack!</h1>
 		    	<div class="stunning-text-caption">
 		    	  Type <b>CTRL+Enter</b> to evaluate the JavaScript source code.
-		    	  To get help try <i>help()</i>.
+		    	  To get help try <i>help()</i> or
+		    	  <b>CTRL+?</b>.
 		    	</div>
 		    <div class="stunning-text-corner top"></div>
 		    <div class="stunning-text-corner bottom"></div>
@@ -173,7 +174,7 @@
 	  </div>
 	</div>
       </div>
-      <div class="display-none mt0" id="help">test</div>
+      <div class="display-none mt0" id="help"></div>
       <br class="clear">
     </div>
 </div>
@@ -201,6 +202,10 @@ $(document.body).keydown(function(e) {
   if ((e.which == 13) &&
   	  (e.metaKey || e.ctrlKey))
     evil($('#source').val());
+
+  if ((e.which == 191) &&
+  	  (e.metaKey || e.ctrlKey))
+    help();
 });
 
 function help() {
