@@ -82,13 +82,27 @@
 		  	  <ul class="slides">
 		    	<li style="width: 100%; float: left; margin-right: -100%; display: list-item;">
 					<div id="repl_source_wrap">
-                       <textarea id="repl_source" rows="100" spellcheck="false">alert("Hello fun.js!");</textarea>
+                       <textarea id="source" rows="100" spellcheck="false">alert("Hello fun.js!");</textarea>
                     </div>
 		    	</li>
 		      </ul>
 			</div>
 		  </div>
 	    </div>
+	    <div class="gdl-page-float-left">
+	      <div class="gdl-page-item">
+			<div class="sixteen columns ">
+			  <div class="stunning-text-wrapper">
+			    <h1 class="stunning-text-title">
+			      <div class="minibutton dark run"><a href="#" id="evil"/Eval</a></div>
+			    </h1>
+			    <div class="stunning-text-caption"></div>
+		      </div>
+		    <div class="stunning-text-corner top"></div>
+		    <div class="stunning-text-corner bottom"></div>
+		    <div class="clear"></div>
+		  </div>
+		</div>
 		<div style="clear:both; height:0px"></div>
 	  </div>
     </div>
@@ -170,5 +184,12 @@
 </div>
 </div><!-- footer-wrapper -->
 </div> <!-- body-wrapper -->
+<script type="text/javascript">
+
+$(document.body).keydown(function(e) {
+  if ((e.which == 13) && (e.metaKey || e.ctrlKey))
+    evil($('#source').val())
+});
+  </script>
 </body>
 </html>
