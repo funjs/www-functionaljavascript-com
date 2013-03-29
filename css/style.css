@@ -1760,4 +1760,6 @@ html[xmlns] .slides {display: block;}
   background-image: url(../images/cover.png);
   opacity: .60;
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 14px;
 }
