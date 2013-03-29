@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>functional javascript</title>
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/images/labyrinth.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/labyrinth.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./css/skeleton-responsive.css">
+    <link rel="stylesheet" href="./css/layout-responsive.css">
+
+    <script language="javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script language="javascript" src="./js/jquery.console.js"></script>
+    <script language="javascript" src="./js/underscore-min.js"></script>
+    <script language="javascript" src="./js/lemonad.js"></script>
+
+    <script language="javascript" src="./js/fun.js"></script>
+  </head>
+
+  <body class="home page page-id-9 page-template-default">
+    <div class="body-wrapper">
+      <div class="container">
+	<div class="header-wrapper">
+	  <!--
+	      <div class="logo-wrapper">
+		<img src="./images/logo.png" alt="logo">
+	      </div>
+	      -->
+	  <div class="header-right-side-wrapper">
+	    <div class="social-wrapper">
+	      <div class="social-icon-wrapper">
+		<div class="social-icon">
+		  <a href="http://www.twitter.com/functionaljs">
+		    <img src="./images/twitter.png" alt="twitter">
+	          </a>
+		</div>
+		<div class="social-icon">
+		  <a href="mailto:me@fogus.me">
+		    <img src="./images/mail.png" alt="email">
+	          </a>
+		</div>
+		<div class="social-icon">
+		  <a href="http://blog.fogus.me/tag/fun-js/feed/">
+		    <img src="./images/rss.png" alt="feed">
+	          </a>
+		</div>
+	      </div>
+	    </div>
+
+	    <!-- Nav -->
+	    <div class="navigation-wrapper">
+	      <div id="main-superfish-wrapper" class="menu-wrapper">
+		<ul id="menu-main" class="sf-menu sf-js-enabled sf-shadow">
+		  <li id="menu-item-977" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-977">
+		    <a href="/">Home</a>
+		  </li>
+		  <li id="menu-item-977" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-977">
+		    <a href="http://www.amazon.com/Functional-JavaScript-Introducing-Programming-Underscore-js/dp/1449360726/?tag=fogus-20">Buy</a>
+		  </li>
+		  <li id="menu-item-977" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-977">
+		    <a href="http://shop.oreilly.com/product/0636920028857.do">O'Reilly</a>
+		  </li>
+		  <li id="menu-item-1566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1566">
+		    <a href="#">Errata</a>
+		  </li>
+		  <li id="menu-item-1566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1566">
+		    <a href="http://www.github.com/fogus/lemonad">Source</a>
+		  </li>
+		</ul>
+	      </div>			
+	    </div>
+	    <div class="clear"></div>
+	  </div> <!-- header-right-side -->
+	</div> <!-- header-wrapper -->
+
+	<div class="content-wrapper ">
+	  <div class="page-wrapper">
+	    <div class="sixteen columns mb0">
+	      <div class="slider-wrapper fullwidth">
+		<div class="flexslider">
+		  <ul class="slides">
+		    <li style="width: 100%; float: left; margin-right: -100%; display: list-item;">
+		      <img src="./images/cover.png" alt="">
+		      <div class="flex-caption gdl-slider-caption">
+			<div class="gdl-slider-title">Functional JavaScript</div>
+			<p><i>Introducing Functional Programming with Underscore.js</i></p>
+
+			While some dismiss JavaScript as a flawed language, 
+			this succinct book shows you how to make the best of it by practicing 
+			a functional programming style.  This book is packed with not only the 
+			'how' of functional programming, but also the 'why'.
+		      </div>
+		    </li>
+		</div>
+	      </div>
+	    </div>
+	    <div class="gdl-page-float-left">
+	      <div class="gdl-page-item">
+		<div class="sixteen columns ">
+		  <div class="stunning-text-wrapper">
+		    <h1 class="stunning-text-title"><i>"This book could be a foundational text."</i></h1>
+		    <div class="stunning-text-caption">-- Jeremy Ashkenas, creator of 
+		      <a href="http://underscorejs.org/">Underscore</a>, 
+		      <a href="http://backbonejs.org/">Backbone</a> and 
+		      <a href="http://coffeescript.org/">CoffeeScript</a></div>
+		    <div class="stunning-text-corner top"></div>
+		    <div class="stunning-text-corner bottom"></div>
+		    <div class="clear"></div>
+		  </div>
+		</div>
+		<br class="clear">
+		<div class="one-third column ">
+		  <div class="column-service-wrapper">
+		    <div class="column-service-title-wrapper">
+		      <div class="column-service-image">
+			<img src="./images/icon.png">
+		      </div>
+		      <h2 class="column-service-title gdl-title">Functions</h2>
+		      <div class="clear"></div>
+		    </div>
+		    <div class="column-service-content">
+		      <i>Functional JavaScript</i> covers the complete realm of functional
+		      programming ideas and techniques, including first-class functions, higher-order
+		      functions, partial application, currying, purity, immutability 
+		      and closures.  With pointed and relevant examples, you'll finish with a 
+		      solid grasp of the techniques and how to apply them in your own projects.
+		    </div>
+		    <div class="column-service-learn-more">
+		      <!-- <a href="#">Learn More</a> -->
+		    </div>
+		  </div>
+		</div>
+
+		<div class="one-third column ">
+		  <div class="column-service-wrapper">
+		    <div class="column-service-title-wrapper">
+		      <div class="column-service-image">
+			<img src="./images/icon.png" alt="">
+		      </div>
+		      <h2 class="column-service-title gdl-title">Data</h2>
+		      <div class="clear"></div>
+		    </div>
+		    <div class="column-service-content">
+		      Functional programming is very much rooted in data-thinking.
+		      <i>Functional JavaScript</i> will cover the marriage of functional
+		      techniques with data and how to exercise a solid grasp of the
+		      flow of data throughout a system.
+		    </div>
+		    <div class="column-service-learn-more">
+		      <!-- <a href="#">Learn More</a> -->
+		    </div>
+		  </div>
+		</div>
+
+		<div class="one-third column ">
+		  <div class="column-service-wrapper">
+		    <div class="column-service-title-wrapper">
+		      <div class="column-service-image">
+			<img src="./images/icon.png" alt="">
+		      </div>
+		      <h2 class="column-service-title gdl-title">Abstraction</h2>
+		      <div class="clear"></div>
+		    </div>
+		    <div class="column-service-content">
+		      Like common techniques like object-orientation, functional
+		      programming is very much a first-class technique for creating
+		      software abstractions.  <i>Functional JavaScript</i> will cover 
+		      various functional abstractions such as flow, pipelines, laziness,
+		      validators, mutable cells, and applicatives.
+		    </div>
+		    <div class="column-service-learn-more">
+		      <!-- <a href="#">Learn More</a> -->
+		    </div>
+		  </div>
+		</div>
+		<div style="clear:both; height:0px"></div>
+	      </div>
+	    </div>
+	  </div>			
+	  <br class="clear">
+	</div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="container">
+	<div class="footer-widget-wrapper">
+	  <div class="one-third column mt0">
+	    <div class="custom-sidebar gdl-divider">
+              <a href="http://www.amazon.com/dp/1449360726/?tag=fogus-20">
+		<img src="./images/cover-small.jpg">
+	      </a>
+	      &nbsp;available for pre-order
+	      <div class="clear"></div>
+	    </div>
+	  </div>
+	</div>
+	<div class="one-third column mt0">
+	  <div class="custom-sidebar gdl-divider">
+	    <h3 class="custom-sidebar-title footer-title-color gdl-title">Glossary</h3>
+	    <div class="tagcloud">
+	      <a href="#" class="glossary-link" style="font-size: 8pt;">currying</a>
+	      <a href="#" class="glossary-link" style="font-size: 16.4pt;">partial</a>
+	      <a href="#" class="glossary-link" style="font-size: 16.4pt;">closure</a>
+	      <a href="#" class="glossary-link" style="font-size: 8pt;">first-class</a>
+	      <a href="#" class="glossary-link" style="font-size: 8pt;">scope</a>
+	    </div>
+	  </div>
+	</div>
+	<div class="one-third column mt0">
+	  <div class="custom-sidebar gdl-divider">
+	    <h3 class="custom-sidebar-title footer-title-color gdl-title">About the author</h3>
+	    <div class="textwidget">
+	      <div style="clear:both; height:6px"></div>
+	      <p><a href="http://www.fogus.me">Michael Fogus</a>—a core contributor to 
+		<a href="http://www.clojure.org">Clojure</a> 
+		and <a href="http://www.clojurescript.net">ClojureScript</a>.  Creator of the  
+		<a href="http://functionaljs.org">Lemonad</a>, <a href="http://www.functionaljs.org/kolmover/">
+		Kolmover</a> and <a href="http://www.functionaljs.org/codd/">
+		Codd</a> JavaScript libraries.
+
+		A fervent blogger at  <a href="http://blog.fogus.me">Send More Paramedics</a> and also 
+		co-author of the book, <i><a href="http://www.joyofclojure.com">The Joy of 
+		Clojure</a></i>.
+	      </p>
+	    </div>
+	  </div>
+	  <div class="custom-sidebar gdl-divider">
+	    <h3 class="custom-sidebar-title footer-title-color gdl-title">Author online</h3>	
+	    <div class="textwidget">
+	      <div style="float: left; clear: both; margin-top: 5px; margin-bottom: 7px; ">
+		<div style="float: left; margin: 4px 7px 0 0;">
+		  <img src="./images/house.png">
+		</div>
+		<div style="float: left;"><a href="http://www.fogus.me">http://fogus.me</a></div>
+	      </div>
+	      <div style="float: left; clear: both; margin-bottom: 7px; ">
+		<div style="float: left; margin: 5px 7px 0 0;">
+		  <img src="./images/email.png">
+		</div>
+		<div style="float: left;">
+		  <a href="#">me -at- fogus -dot- me</a>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="display-none mt0"></div>					
+      <br class="clear">
+    </div>
+</div>
+<div class="copyright-wrapper">
+  <div class="container">
+    © Copyright 2013, Michael Fogus
+  </div>
+</div>
+</div><!-- footer-wrapper -->
+</div> <!-- body-wrapper -->
+</body>
+</html>
