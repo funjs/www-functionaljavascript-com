@@ -185,6 +185,12 @@
 </div><!-- footer-wrapper -->
 </div> <!-- body-wrapper -->
 <script type="text/javascript">
+function typed() {
+  console.log('typed');
+}
+
+$('#source').keydown(typed);
+
 function evil(src) {
   try {
   	eval(src);
