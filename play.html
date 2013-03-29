@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/layout-responsive.css">
 
     <script language="javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script language="javascript" src="./js/jquery.console.js"></script>
+    <script language="javascript" src="./js/jquery.lightbox_me.js"></script>
     <script language="javascript" src="./js/underscore-min.js"></script>
     <script language="javascript" src="./js/lemonad.js"></script>
 
@@ -173,7 +173,7 @@
 	  </div>
 	</div>
       </div>
-      <div class="display-none mt0" id="help"></div>
+      <div class="display-none mt0" id="help">test</div>
       <br class="clear">
     </div>
 </div>
@@ -186,24 +186,30 @@
 </div> <!-- body-wrapper -->
 
 <script type="text/javascript">
+$.browser = {};
+
 function typed() {}
 
 $('#source').keydown(typed);
 
 function evil(src) {
-  try {
-  	eval(src);
-  }
-  catch (err) {
-  	alert(err);
-  }
+  try {	eval(src) }
+  catch (err) {	alert(err) }
 }
 
 $(document.body).keydown(function(e) {
   if ((e.which == 13) &&
   	  (e.metaKey || e.ctrlKey))
-    evil($('#source').val())
+    evil($('#source').val());
 });
-  </script>
+
+function help() {
+  $('#help').load('./test.html', function() {
+  	$('#help').lightbox_me({
+  	  centered: true
+  	});
+  });
+}
+</script>
 </body>
 </html>
