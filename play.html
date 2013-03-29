@@ -185,9 +185,18 @@
 </div><!-- footer-wrapper -->
 </div> <!-- body-wrapper -->
 <script type="text/javascript">
+function evil(src) {
+  try {
+  	eval(src);
+  }
+  catch (err) {
+  	alert(err);
+  }
+}
 
 $(document.body).keydown(function(e) {
-  if ((e.which == 13) && (e.metaKey || e.ctrlKey))
+  if ((e.which == 13) &&
+  	  (e.metaKey || e.ctrlKey))
     evil($('#source').val())
 });
   </script>
