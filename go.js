@@ -10,6 +10,13 @@ http.createServer(function(request, response) {
   var uri = url.parse(request.url).pathname;
   var filename = path.join(process.cwd(), uri);
 
+  console.log(uri);
+
+  serve(request, response, filename);
+
+}).listen(parseInt(port, 10));
+
+function serve(_, response, filename) {
   fs.exists(filename, function(exists) {
     if(!exists) {
       response.writeHead(404, {"Content-Type": "text/plain"});
@@ -33,6 +40,7 @@ http.createServer(function(request, response) {
       response.end();
     });
   });
-}).listen(parseInt(port, 10));
+}
 
 console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
+
