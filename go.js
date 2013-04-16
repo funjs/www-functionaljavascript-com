@@ -13,7 +13,7 @@ http.createServer(function(request, response) {
   switch(uri)
   {
   case '/dictionary':
-    console.log();
+    console.log('dictionary request');
   default:
     serve(request, response, filename);
   };
