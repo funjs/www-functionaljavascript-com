@@ -10,10 +10,13 @@ http.createServer(function(request, response) {
   var uri = url.parse(request.url).pathname;
   var filename = path.join(process.cwd(), uri);
 
-  console.log(uri);
-
-  serve(request, response, filename);
-
+  switch(uri)
+  {
+  case '/dictionary':
+    console.log();
+  default:
+    serve(request, response, filename);
+  };
 }).listen(parseInt(port, 10));
 
 function serve(_, response, filename) {
