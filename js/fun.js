@@ -2,11 +2,12 @@ function lookup(term) {
   var request = $.ajax({
     url: '/dictionary',
     type: 'POST',
-    data: JSON.stringify({term: term})
-  });
+    data: JSON.stringify({term: term}),
+    success: function(data) {
+      alert('got response ' + data.definition);
 
-  request.done(function(response, status, xhr) {
-    alert('got response ' + response);
+      return false;
+    }
   });
 
   request.fail(function(xhr, status, err) {

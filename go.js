@@ -2,7 +2,7 @@ var http = require("http"),
     url = require("url"),
     path = require("path"),
     fs = require("fs"),
-    dictionary = require("./dictionary");
+    dictionary = require("./dictionary").dictionary;
 
 port = process.env.PORT || 5000;
 
@@ -29,10 +29,10 @@ function define(request, response) {
 
   request.on('end', function() {
     var lookup = JSON.parse(body);
-    lookup.definition = dictionary[lookup.term];
+    var def = dictionary[lookup.term];
 
     response.writeHead(200, {"Content-Type": "application/json"});
-    response.write(JSON.stringify(lookup));
+    response.write(JSON.stringify({term: lookup.term, definition: def}));
     response.end();
   });
 }
