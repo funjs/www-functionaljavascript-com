@@ -1,7 +1,8 @@
 var http = require("http"),
     url = require("url"),
     path = require("path"),
-    fs = require("fs");
+    fs = require("fs"),
+    dictionary = require("./dictionary");
 
 port = process.env.PORT || 5000;
 
