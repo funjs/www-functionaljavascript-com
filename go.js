@@ -13,11 +13,29 @@ http.createServer(function(request, response) {
   switch(uri)
   {
   case '/dictionary':
-    console.log('dictionary request');
+    define(request, response);
   default:
     serve(request, response, filename);
   };
 }).listen(parseInt(port, 10));
+
+function define(request, response) {
+  var body = '';
+
+  request.on('data', function(chunk) {
+   body += chunk.toString();
+   console.log(body);
+  });
+
+  request.on('end', function() {
+    var lookup = JSON.parse(body);
+    lookup.definition = dictionary[lookup.term];
+
+    response.writeHead(200, {"Content-Type": "application/json"});
+    response.write(JSON.stringify(lookup));
+    response.end();
+  });
+}
 
 function serve(_, response, filename) {
   fs.exists(filename, function(exists) {

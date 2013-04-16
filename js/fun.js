@@ -6,7 +6,7 @@ function lookup(term) {
   });
 
   request.done(function(response, status, xhr) {
-    alert('got response');
+    alert('got response ' + response);
   });
 
   request.fail(function(xhr, status, err) {
