@@ -1,11 +1,12 @@
-function lookup(term) {
+function lookup(term, event) {
+  event.preventDefault();
+
   var request = $.ajax({
     url: '/dictionary',
     type: 'POST',
     data: JSON.stringify({term: term}),
     success: function(data) {
-      alert('got response ' + data.definition);
-
+      alert(data.definition);
       return false;
     }
   });

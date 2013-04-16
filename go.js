@@ -31,8 +31,15 @@ function define(request, response) {
     var lookup = JSON.parse(body);
     var def = dictionary[lookup.term];
 
-    response.writeHead(200, {"Content-Type": "application/json"});
-    response.write(JSON.stringify({term: lookup.term, definition: def}));
+    if (def) {
+      response.writeHead(200, {"Content-Type": "application/json"});
+      response.write(JSON.stringify({term: lookup.term, definition: def}));
+    }
+    else {
+      response.writeHead(401, {"Content-Type": "text/plain"});
+      response.write("Term not found: " + lookup.term);
+    }
+
     response.end();
   });
 }
