@@ -14,10 +14,16 @@ http.createServer(function(request, response) {
   {
   case '/dictionary':
     define(request, response);
+  case 'hotness':
+    hot(request, response);
   default:
     serve(request, response, filename);
   };
 }).listen(parseInt(port, 10));
+
+function hot(request, response) {
+  
+}
 
 function define(request, response) {
   var body = '';
